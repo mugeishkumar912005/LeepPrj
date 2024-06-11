@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mugeish.SceneController">
+   <top>
+      <AnchorPane prefHeight="239.0" prefWidth="1280.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="614.0" layoutY="180.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="110.0" style="-fx-background-color: #3498DB; -fx-background-radius: 10;" text="Join" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+            <Label alignment="CENTER" layoutX="486.0" layoutY="94.0" prefHeight="51.0" prefWidth="252.0" style="-fx-border-color: white; -fx-border-radius: 10;" text="Enter Code" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font></Label>
+            <Button layoutX="498.0" layoutY="181.0" mnemonicParsing="false" onAction="#SwitchToAddNewQuiz" prefHeight="43.0" prefWidth="98.0" style="-fx-background-color: #93C572; -fx-background-radius: 10;" text="ADD QUIZ" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <ImageView fitHeight="81.0" fitWidth="156.0" layoutX="547.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@quizz.jpg" />
+               </image>
+            </ImageView>
+            <Button layoutX="14.0" layoutY="58.0" mnemonicParsing="false" onAction="#SwitchToLogin" text="BACK">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #ffa500;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="Category" alignment="CENTER" layoutX="509.0" layoutY="12.0" prefHeight="54.0" prefWidth="190.0" style="-fx-border-color: black; -fx-border-radius: 0; -fx-background-color: white;" text="Category">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font></Label>
+            <ImageView fitHeight="112.0" fitWidth="200.0" layoutX="130.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@science.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="111.0" fitWidth="200.0" layoutX="525.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@mathsimg.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="109.0" fitWidth="200.0" layoutX="1001.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@english img.jpg" />
+               </image>
+            </ImageView>
+            <RadioButton layoutX="214.0" layoutY="167.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="16.0" />
+            <RadioButton layoutX="617.0" layoutY="166.0" mnemonicParsing="false" />
+            <RadioButton layoutX="1093.0" layoutY="166.0" mnemonicParsing="false" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

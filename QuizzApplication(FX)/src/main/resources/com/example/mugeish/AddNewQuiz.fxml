@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mugeish.QuizController">
+   <top>
+      <AnchorPane prefHeight="101.0" prefWidth="1280.0" style="-fx-background-color: #ffa500;" BorderPane.alignment="CENTER">
+         <Text boundsType="VISUAL" fontSmoothingType="LCD" layoutX="442.0" layoutY="58.0" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="0.0" text="ADD A NEW QUIZ" textAlignment="CENTER" wrappingWidth="392.13671875">
+            <font>
+               <Font name="Tahoma Bold" size="33.0" />
+            </font>
+         </Text>
+         <TextField fx:id="quizTitleTextField" alignment="CENTER" layoutX="514.0" layoutY="83.0" prefHeight="39.0" prefWidth="247.0" promptText="Enter Quiz Title" style="-fx-background-radius: 10;">
+            <font>
+               <Font size="22.0" />
+            </font>
+         </TextField>
+         <Button fx:id="createQuizButton" layoutX="776.0" layoutY="89.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="53.0" style="-fx-background-color: #5D6D7E; -fx-background-radius: 8;" text="Ok" textFill="WHITE" />
+         <ButtonBar layoutX="-47.0" layoutY="21.0" prefHeight="40.0" prefWidth="200.0">
+           <buttons>
+             <Button mnemonicParsing="false" style="-fx-background-radius: 10;" text="Back">
+                  <font>
+                     <Font name="Tahoma Bold" size="17.0" />
+                  </font>
+               </Button>
+           </buttons>
+         </ButtonBar>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <TextField fx:id="option1TextField" layoutX="174.0" layoutY="120.0" prefHeight="39.0" prefWidth="247.0" promptText="Option 1" style="-fx-background-radius: 10;">
+            <font>
+               <Font size="22.0" />
+            </font>
+         </TextField>
+         <TextArea fx:id="questionTextArea" layoutX="132.0" layoutY="28.0" prefHeight="48.0" prefWidth="996.0" promptText="Enter Question">
+            <font>
+               <Font size="18.0" />
+            </font>
+         </TextArea>
+         <TextField fx:id="option2TextField" layoutX="175.0" layoutY="197.0" prefHeight="39.0" prefWidth="247.0" promptText="Option 2" style="-fx-background-radius: 10;">
+            <font>
+               <Font size="22.0" />
+            </font>
+         </TextField>
+         <TextField fx:id="option3TextField" layoutX="173.0" layoutY="272.0" prefHeight="39.0" prefWidth="247.0" promptText="Option 3" style="-fx-background-radius: 10;">
+            <font>
+               <Font size="22.0" />
+            </font>
+         </TextField>
+         <TextField fx:id="option4TextField" layoutX="172.0" layoutY="349.0" prefHeight="39.0" prefWidth="247.0" promptText="Option 4" style="-fx-background-radius: 10;">
+            <font>
+               <Font size="22.0" />
+            </font>
+         </TextField>
+         <RadioButton fx:id="correctOption1RadioButton" layoutX="198.0" layoutY="484.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="130.0" text="Option 1" textFill="ORANGE">
+            <padding>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+         </RadioButton>
+         <RadioButton fx:id="correctOption2RadioButton" layoutX="355.0" layoutY="484.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="130.0" text="Option 2" textFill="ORANGE">
+            <padding>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+         </RadioButton>
+         <RadioButton fx:id="correctOption3RadioButton" layoutX="510.0" layoutY="485.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="130.0" text="Option 3" textFill="ORANGE">
+            <padding>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+         </RadioButton>
+         <RadioButton fx:id="correctOption4RadioButton" layoutX="671.0" layoutY="486.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="130.0" text="Option 4" textFill="ORANGE">
+            <padding>
+               <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+         </RadioButton>
+         <Text boundsType="VISUAL" fontSmoothingType="LCD" layoutX="313.0" layoutY="459.0" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="0.0" text="Select A Right Answer" textAlignment="CENTER" wrappingWidth="392.13671875">
+            <font>
+               <Font name="Calibri" size="17.0" />
+            </font>
+         </Text>
+         <Button fx:id="addNextQuestionButton" layoutX="570.0" layoutY="225.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="119.0" style="-fx-background-color: #ffa500;" text="Add Next Question" textFill="WHITE">
+            <font>
+               <Font name="Tahoma Bold" size="12.0" />
+            </font></Button>
+         <Button fx:id="submitQuizButton" layoutX="570.0" layoutY="300.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="119.0" style="-fx-background-color: #ffa500;" text="Submit Quiz" textFill="WHITE">
+            <font>
+               <Font name="Tahoma Bold" size="12.0" />
+            </font></Button>
+      </AnchorPane>
+   </left>
+</BorderPane>
